@@ -1,0 +1,10 @@
+<h3> Here are a list of patients: </h3>
+
+    <ul>
+        <% Patient.all.each do |p|%>
+        <li>
+            Name: <%=p.name%>
+            Number of Appointments: <%=p.number_of_appointments%> 
+        </li>
+        <% end %>
+    </ul>
